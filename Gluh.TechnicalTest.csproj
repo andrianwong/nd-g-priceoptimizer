@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\PurchaseOrderExtensions.cs" />
+    <Compile Remove="Extensions\ProductExtensions.cs" />
+    <Compile Remove="Extensions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Extensions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Extensions\**" />
+  </ItemGroup>
+
+</Project>
